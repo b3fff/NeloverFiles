@@ -105,7 +105,7 @@ GetJson = GetJson..'"Welcomes":"'..Welcomes..'"}'
 end
 GetJson = GetJson..'}}'
 local File = io.open('./'..Nelover..'.json', "w")
-File:write(GetJson)
+File:write(GetJso
 File:close()
 local Rio = 'https://api.telegram.org/bot' .. TokenBot .. '/sendDocument'
 local curl = 'curl "' .. Rio .. '" -F "chat_id='..DevId..'" -F "document=@'..Nelover..'.json' .. '" -F "caption=⌁︙نسخه تلقائيه تحتوي على ↫ '..#list..' مجموعه"'
